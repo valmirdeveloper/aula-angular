@@ -1,12 +1,14 @@
 <div class="container">
 
     <div class="form-group">
-      <label for="">Digite o nome de um objeto</label>
+      <label for="">Digite o nome de um objetoo</label>
       <input type="text" class="form-control" name="teste" [(ngModel)]="nome">  
     </div>
     <button class="btn btn-success" (click)="add()">Adicionar</button> 
 
-    <p class="alert alert-danger">Seja bem vindo {{nome}} </p>
+    <p class="alert alert-danger">
+        <app-contato></app-contato>
+    </p>
     <p class="alert alert-primary">Projeto {{title}} </p>
 
     <table class="table">
