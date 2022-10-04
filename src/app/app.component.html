@@ -1,23 +1,13 @@
 <div class="container">
-
-    <div class="form-group">
-      <label for="">Digite o nome de um objeto</label>
-      <input type="text" class="form-control" name="teste" [(ngModel)]="nome">  
-    </div>
-    <button class="btn btn-success" (click)="add()">Adicionar</button> 
-
-    <p class="alert alert-danger">
-        <app-contato></app-contato>
-    </p>
-    <p class="alert alert-primary">Projeto {{title}} </p>
-
-    <table class="table">
-        <tr *ngFor="let o of vetor, let i=index">
-            <td>{{i}}</td>
-            <td>{{o}}</td>
-            <td><button class='btn btn-outline-danger' (click)="remover(i)">X</button></td>
-        </tr>
-    </table>
+  <header>
+    <h1>Turismo SA</h1>
+</header>
+<nav>
+   <app-menu></app-menu>
+</nav>
+<section>
+    <app-home></app-home>
+</section>
 </div>
 
 
